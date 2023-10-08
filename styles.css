@@ -1,0 +1,156 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url('src/back.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#main-page {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    text-align: left;
+}
+
+.search {
+    text-align: center;
+    margin-top: 20px;
+}
+#searchInput {
+    margin: 0px 10px 20px;
+}
+
+#searchResults {
+    display: grid;
+    color: #f5f5f5;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px; 
+    justify-items: center; 
+}
+
+
+.result-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.thumbnail {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.meal-name {
+    flex-grow: 1; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#favorites {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Favorites Page Styles */
+
+body.favorites-page {
+    background: url('src/back.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#favoriteList {
+    display: grid;
+    color: #f5f5f5;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px; 
+    justify-items: center; 
+}
+
+#favoriteList .meal-name {
+   color: black;
+}
+
+.favorite-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+    border-radius: 5px;
+}
+
+/* Meal Detail Page Styles */
+
+
+body.meal-detail-page {
+    background: url('src/back.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mealDetail {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex; 
+    position: relative;
+    flex-direction: row; 
+    align-items: center;
+    text-align: center; 
+    justify-content: space-between;
+}
+
+#mealDetail h2 {
+    display: flex;
+    margin-bottom: 20px; 
+    align-self: flex-start;
+    position: absolute;
+    margin: 0.1% 25%;
+
+}
+
+#mealDetail img {
+    max-width: 40%;
+    max-height: 50vh; 
+    margin-bottom: 20px; 
+    margin-right: 20px;
+    align-self: flex-start; 
+    justify-content: center;
+
+}
+
+#mealDetail p {
+    align-self: flex-end; 
+    flex: 1; 
+    justify-content:right;
+    text-align: justify;
+
+}
