@@ -1,6 +1,7 @@
 # Meal App
 
 Meal App is a web application that allows users to search for meals, view meal details, and add their favorite meals to a list. Users can also view their favorite meals on a separate page.
+
 -visit <https://simple-github.github.io/Meals_App/> for walkthrough
 
 ## Features
