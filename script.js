@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let data = await response.json();
                 return data.meals || [];
             } catch (error) {
+                alert("TheMealDb API Down");
                 console.error('Error fetching data:', error);
                 return [];
             }
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let data = await response.json();
                 return data.meals || [];
             } catch (error) {
+                alert("TheMealDb API Down");
                 console.error('Error fetching data:', error);
                 return [];
             }
